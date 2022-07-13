@@ -3,17 +3,53 @@
     <head>
         <title>Haonan Jiang's Personal Portfolio</title>
         <meta charset="UTF-8">
-
+        <style>
+            h1 {color:red;}
+        </style>
+        <script></script> 
     </head>
 
     <body>
+        <header>
+            <a href="experiment.html">Link to experiment page</a>
+        </header>
         <main>
-            <h1>Personal Portfolio</h1>
-            <h2>About Me</h2>
-            <p>A student in UCSD</p>
-            <li><a href="aboutme.html">Overview</a></li>
-            <h2>My Progress</h2>
-            <p>TBA(potential h1 tags)</p>
+            <h1>Hi, I am Haonan Jiang</h1>
+            <section>
+                <h2>About Me</h2>
+                <p>A student in <span style="color:yellow">UCSD</span></p>
+                <li><a href="aboutme.html">Overview</a></li>
+            </section>
+            <hr>
+
+            <div>
+                <h2>My Projects</h2>
+                <li><a href="projects.html">Overview</a></li>
+            </div>
+
+            <nav>
+                <a href="aboutme.html">About Me</a> |
+                <a href="projects.html">My Projects</a> |
+                <a href="experiment.html">Experiment Page</a>
+            </nav>
         </main>
+        <footer>
+            <h3>Contact Information</h3>
+            <aside>Haonan Jiang</aside>
+            <form>
+                <fieldset>
+                    <legend>leave a message to me:</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br><br>
+                    <label for="text">Message:</label>
+                    <textarea id="text" name="text" rows="4" cols="50">Your message here</textarea><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+                
+            </form>
+            
+        </footer>
     </body>
 </html>
