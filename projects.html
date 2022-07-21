@@ -3,19 +3,57 @@
     <head>
         <link rel="stylesheet" media="screen" type="text/css" href="assets/css/header.css">
         <link rel="stylesheet" media="screen" type="text/css" href="assets/css/body.css">
+        <link rel="stylesheet" media="screen" type="text/css" href="assets/css/footer.css">
         <title>my projects</title>
     </head>
     <body>
+        <header>
+            <nav class="top-nav">
+                <a href="/" class="header-logo">Main</a>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                  <li><a href="/aboutme.html">About Me</a></li>
+                  <li><a href="/projects.html">My Projects</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
         <h1>My projects</h1>
-        <ul>
+        <ul class="projects">
             <li><details>
-                <summary>for popularizing the impact of climate change to students, 9/2020-12/2020</summary> 
-                <p>Wrote articles for popularizing the impact of climate change to the targeted  audiences as students and implemented it as a website. 
+                <summary>Author for popularizing the impact of climate change to students, 9/2020-12/2020</summary> 
+                <p>Wrote articles for popularizing the impact of climate change to the targeted  audiences as students and implemented it as a  <a href="https://sites.google.com/ucsd.edu/climatechangeguide/home">website</a>. 
                 </p>
             </details></li>
-            <li>Tester and Developer for a recipe webapp, 9/2021-12/2021</li>
-            <li>Planner and Developer for a recipe webapp, 3/2022-6/2022</li>
-            <li> Writer for a scientific analysis on the relationship between education level and covid transmission rate, 3/2022-6/2022</li>
+            <li><details>
+                <summary>Tester and Developer for a recipe webapp, 9/2021-12/2021</summary>
+                <p>Designed a <a href="https://yummyrecipesapp.com/">recipe webapp</a> for people who work out to help with meal planning.  Worked as tester and developer in the project. 
+                </p>
+            </details></li>
+            <li><details>
+                <summary>Planner and Developer for a recipe webapp, 3/2022-6/2022</summary>
+                <p>Improved a <a href="http://exploding-kitchen.us-west-1.elasticbeanstalk.com/">recipe webapp</a> by adding database functionality and user system.
+                Worked as planner and developer in the project
+                </p>
+            </details></li>
+            <li><details>
+                <summary>Writer for a scientific analysis on the relationship between education level and covid transmission rate, 3/2022-6/2022</summary>
+                <p>Wrote a <a href="https://github.com/Solowyhn/Group060Sp22/blob/master/FinalProject_group060.ipynb">scientific report</a> about the relationship between education level and  covid transmission rate using jupyter notebook.
+                </p>
+            </details></li>
         </ul>
+        <footer id="footer">
+            <ul>
+                <li>👋</li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Email</a></li>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">Github</a></li>
+              </ul>
+        </footer>
     </body>
 </html>

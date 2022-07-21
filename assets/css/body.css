@@ -11,6 +11,7 @@
     color: white;
     background-color: transparent;
     margin: 0 -5px;
+    line-height: 2.8;
 }
 
 .column {
@@ -25,24 +26,72 @@
     text-align: center;
     position: relative;
     background-color: #051f5a;
-    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
 }
 
 .overview-card:hover {
     background-color: #FFCCCC;
-    transform: rotate(360deg);
+    transform: scale(1.1);
 }
 
 .overview-card .btn {
     position: absolute;
     bottom: 10px;
-    left: 20px;
+    right: 20px;
+}
+#project-card {
+    display: flex;
+    flex-direction: column;
 }
 
+#project-card .pictures{
+    flex: 50%;
+    padding: 5px;
+}
+
+.projects {
+    list-style-type: none;
+}
+
+.projects a {
+    background-color: var(--pink-color);
+}
+
+.projects li {
+    line-height: 3;
+}
+
+.aboutme h2 {
+    text-align: left;
+}
+.aboutme p {
+    text-align: center;
+ }
+
+.aboutme img {
+    float: right;
+}
+
+.aboutme p:first-child {
+    text-align: center;
+    float: left;
+}
 @media (max-width: 767px) {
     .column {
       width: 100%;
       margin-bottom: 20px;
+    }
+
+    .overview-card .btn {
+        display: none;
+    }
+
+    .aboutme img {
+        float: none;
+    }
+
+    .aboutme p:last-child {
+        text-align: center;
     }
 }
 

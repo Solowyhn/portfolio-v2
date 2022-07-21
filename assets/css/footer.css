@@ -5,9 +5,9 @@
 
 #footer {
     bottom: 0;
-    position: absolute;
+    position: fixed;
     display: grid;
-    height: 15vh;
+    height: 10%;
     width: 100%;
     background-color: var(--pink-color);
     line-height: 0.5;
@@ -44,5 +44,15 @@
 @media (max-width: 767px) {
     #footer ul {
       flex-direction: column;
+    }
+
+    #footer {
+        bottom: 0;
+        position: relative;
+        display: grid;
+        height: 30%;
+        width: 100%;
+        background-color: var(--pink-color);
+        line-height: 0.2;
     }
   }
