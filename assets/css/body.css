@@ -119,8 +119,9 @@
     .message-box legend, .message-box textarea{
         display: none;
     }
-    .message-box {
-        align-items: right;
+    
+    .message-box #message {
+        display: grid;
     }
 }
 
