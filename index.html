@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <title>Haonan Jiang's Personal Portfolio</title>
         <meta charset="UTF-8">
-        <style>
-        </style>
-        <script></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen" type="text/css" href="assets/css/header.css">
+        <link rel="stylesheet" media="screen" type="text/css" href="assets/css/body.css">
+        <link rel="stylesheet" media="screen" type="text/css" href="assets/css/footer.css">
+        <title>Haonan Jiang's Personal Portfolio</title>
     </head>
 
     <body>
         <header>
-            <a href="experiment.html">Link to experiment page</a>
-            <nav>
-                <a href="aboutme.html">About Me</a> |
-                <a href="projects.html">My Projects</a> |
-                <a href="experiment.html">Experiment Page</a>
+            <nav class="top-nav">
+                <a href="/" class="header-logo">Main</a>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                  <li><a href="/aboutme.html">About Me</a></li>
+                  <li><a href="/projects.html">My Projects</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+                </ul>
             </nav>
+            <h1>Hi, I am Haonan Jiang</h1>
         </header>
         
-        <main>
-            <center><h1>Hi, I am Haonan Jiang</h1></center>
-            <section>
-                <h2>About Me</h2>
-                <p>A student in <span>UCSD</span></p>
-                <a href="aboutme.html">Overview</a>
-            </section>
-            <hr>
-
-            <div>
-                <h2>My Projects</h2>
-                <a href="projects.html">Overview</a>
+        <main class="overview">
+            <div class="column">
+                <section class="overview-card">
+                    <h2>About Me</h2>
+                    <p>Male</p>
+                    <p>Computer Science</p>
+                    <p>UCSD Senior Student</p>
+                    <div class="btn">
+                        <button><a href="aboutme.html">Read More</a></button>
+                    </div>
+                </section>
             </div>
-            <hr>
-
-        </main>
-        <footer>
-            <h3>Contact Information</h3>
-            <aside>Haonan Jiang</aside>
-            <p>solowyhn@gmail.com | 8888888888</p>
-            <form>
-                <fieldset>
-                    <legend>leave a message to me:</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email"><br><br>
-                    <label for="text">Message:</label>
-                    <textarea id="text" name="text" rows="4" cols="50">Your message here</textarea><br>
-                    <input type="submit" value="Submit">
-                </fieldset>
-                
-            </form>
             
+            <div class="column">
+                <section class="overview-card">
+                    <h2>My Projects</h2>
+                    <div class="btn">
+                        <button><a href="projects.html">Read More</a></button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer id="footer">
+            <ul>
+                <li>👋</li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Email</a></li>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">Github</a></li>
+              </ul>
         </footer>
     </body>
 </html>

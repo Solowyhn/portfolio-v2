@@ -1,0 +1,50 @@
+.overview {
+    background-color: #1D263B;
+}
+.overview:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.overview * {
+    color: white;
+    background-color: transparent;
+    margin: 0 -5px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.overview-card {
+    box-shadow: 0 4px 8px 0 rgba(253, 253, 253, 0.2);
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    background-color: #051f5a;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.overview-card:hover {
+    background-color: #FFCCCC;
+    transform: rotate(360deg);
+}
+
+.overview-card .btn {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+@media (max-width: 767px) {
+    .column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+}
+
+
+
